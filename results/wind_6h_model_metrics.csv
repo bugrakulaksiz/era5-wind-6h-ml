@@ -1,0 +1,3 @@
+model,MAE_m/s,RMSE_m/s
+Persistence,0.831849,1.124159
+ML gradient boosting,0.738684,0.977797

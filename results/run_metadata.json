@@ -1,0 +1,42 @@
+{
+  "data_source": "ERA5 reanalysis via Open-Meteo historical archive API",
+  "location": {
+    "name": "Darmstadt, Germany",
+    "latitude": 49.8728,
+    "longitude": 8.6512
+  },
+  "period": "2022-01-01 to 2024-12-31 UTC",
+  "records_downloaded": 26304,
+  "horizon_hours": 6,
+  "features_count": 28,
+  "split_counts": {
+    "train_2022": 8730,
+    "validation_2023": 8754,
+    "test_2024": 8778
+  },
+  "model_type": "sklearn.ensemble.HistGradientBoostingRegressor",
+  "selected_parameters": {
+    "max_iter": 100,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "random_state": 42
+  },
+  "validation": {
+    "persistence_MAE": 0.8596378798263651,
+    "persistence_RMSE": 1.1316015962877757,
+    "ml_MAE": 0.802399,
+    "ml_RMSE": 1.043079
+  },
+  "test": {
+    "persistence_MAE": 0.831849,
+    "persistence_RMSE": 1.124159,
+    "ml_MAE": 0.738684,
+    "ml_RMSE": 0.977797
+  },
+  "test_improvement_pct": {
+    "MAE": 11.2,
+    "RMSE": 13.02
+  },
+  "checkpoint_sha256": "638ee30472e4e7fb4156712b680efb9eb7db5de871a97603ce11e7000c4614d8",
+  "evaluation_provenance": "metrics copied from the user-provided Colab output screenshot; model structure statically inspected without deserialization"
+}
